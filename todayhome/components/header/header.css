@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.container ul li {
+    padding-right: 10px;
+}
