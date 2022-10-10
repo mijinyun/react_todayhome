@@ -103,7 +103,6 @@ $main-color : #00bbff;
     }
 
     img {
-        margin-right:35px;
         @include media ('>1024px') {
             margin-right: 35px;
         }

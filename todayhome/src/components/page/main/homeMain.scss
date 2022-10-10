@@ -1,0 +1,83 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+$main-color : #00bbff;
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    
+    .img_wrap {
+        width: 70%;
+        position: relative;
+
+        img {
+            position: absolute;
+            top:50%;
+            width: 100%;
+            min-height: 100%;
+            border-radius: 10px;
+            
+        }
+    }
+
+    .img_content_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        align-items: center;
+        top:30rem;
+        left:5rem;
+
+        .img_content {
+            padding-right: 300px;
+        }
+
+
+        .img_content_title {
+            h1 {
+                font-size: 24px;
+                max-height: 66px;
+                font-weight: bold;
+                color:white;
+            }
+
+            img {
+                width: 18px;
+                height: 18px;
+                border-radius: 9px;
+                margin-right: 5px;
+            }
+            span {
+                font-size: 13px;
+                color: white;
+            }
+        }
+    }
+
+    .img_more {
+        button {
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            color:white;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        button:hover {
+            background-color: $main-color;
+            border-color: $main-color;
+        }
+    }
+}
+
