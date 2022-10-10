@@ -1,4 +1,5 @@
 import './homeMain.scss';
+import Navbar from './navbar.js';
 
 function HomeMain() {
     return(
@@ -22,6 +23,8 @@ function HomeMain() {
                     </div>
                 </div>
             </div>
+
+            <Navbar />
             
         </>
     )
