@@ -1,8 +1,13 @@
+import './subheader.scss';
 
-function SubHeader() {
+
+function SubHeader(props) {
+
+    console.log(props);
+
     return(
         <div>
-            <div className='category'>
+            <div className='subMenu'>
                 <ul>
                     <li>홈</li>
                     <li>팔로잉</li>
