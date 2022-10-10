@@ -2,11 +2,17 @@ import Logo from './logo.png';
 import {Nav} from 'react-bootstrap'
 import './header.scss';
 import SubHeader from './subheader/subHeader.js';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+// 아이콘
 import {FiShoppingCart} from 'react-icons/fi'; // https://react-icons.github.io/react-icons 여기서 가져옴.
+import { FaSearch } from 'react-icons/fa';
+
+// 부트스트랩
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import { useEffect } from 'react';
+
+// 카테고리 데이터 불러오기
 import data from '../header/subheader/data.js';
 
 
@@ -32,31 +38,28 @@ function Header () {
         }
     },[clickIdx]);
 
-
-    function clickMenu(num) {
-        setClickIdx(num);
-    }
-
     return (
         <>
         <Nav>
             <div className='container'>
-                <img src={Logo} width="100px"/>
+                <img src={Logo} width="74px" height="40px" />
                 <ul className='Menu'>
-                    <li onClick={clickMenu(0)}>커뮤니티</li>
-                    <li onClick={clickMenu(1)}>메뉴</li>
-                    <li onClick={clickMenu(2)}>이상/시공/수리</li>
+                    <li onClick={()=> { setClickIdx(0)}}>커뮤니티</li>
+                    <li onClick={()=> { setClickIdx(1)}}>스토어</li>
+                    <li onClick={()=> { setClickIdx(2)}}>이상/시공/수리</li>
                 </ul>
-                <ul>
-                    <li><input type='text'></input></li>
-                    <li><FiShoppingCart /></li>
+                <ul className='MenuUser'>
+                    <li>
+                        <input className='Search' type='text'placeholder='통합검색'></input>
+                    </li>        
+                    <li><span className='cartIcon'><FiShoppingCart /></span></li>
                     <li>로그인</li>
                     <li className='signMenu'>회원가입</li>
                     <li>고객센터</li>
                 </ul>    
                 <ul className='posting'>
                     <li>
-                        <DropdownButton id="dropdown-basic-button" title="글쓰기">
+                        <DropdownButton id="dropdown-basic-button writeBtn" title="글쓰기">
                         <Dropdown.Item href="#/action-1">사진/동영상 올리기</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">집들이 글쓰기</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">노하우 글쓰기</Dropdown.Item>
