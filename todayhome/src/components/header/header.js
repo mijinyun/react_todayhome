@@ -4,6 +4,7 @@ import {Nav} from 'react-bootstrap'
 import './header.scss';
 import SubHeader from './subheader/subHeader.js';
 import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 
 // 아이콘
 import {FiShoppingCart} from 'react-icons/fi'; // https://react-icons.github.io/react-icons 여기서 가져옴.
@@ -48,7 +49,7 @@ function Header () {
 
 
     return (
-        <>
+        <header>
         {
             alert == true ? <div className='alert-warning'><img src={PopUp}/></div> : null
 
@@ -57,10 +58,18 @@ function Header () {
 
         <Nav>
             <div className='container'>
-                <img src={Logo} width="74px" height="40px" />
+                <Link to='/'><img src={Logo} width="74px" height="40px" /></Link>
+
                 <ul className='Menu'>
+
+                <Link to='/' style={{textDecoration:'none', color:'black'}}>
                     <li onClick={()=> { setClickIdx(0)}}>커뮤니티</li>
+                </Link>
+
+                <Link to='/store' style={{textDecoration:'none', color:'black'}}>
                     <li onClick={()=> { setClickIdx(1)}}>스토어</li>
+                </Link>
+                
                     <li onClick={()=> { setClickIdx(2)}}>이상/시공/수리</li>
                 </ul>
                 <ul className='MenuUser'>
@@ -87,7 +96,7 @@ function Header () {
             </div>
         </Nav>
         <SubHeader subMenu={subMenu}/>
-        </>
+        </header>
     )
 }
 

@@ -1,3 +1,7 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+$main-color : #00bbff;
+
 * {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 16px;
@@ -12,17 +16,41 @@
     height: 165px;
     max-width: 1256px;
     margin: 0 auto;
+    margin-top:3%;
     box-sizing: border-box;
+
+    @include media('>375px') {
+        padding:0 15px;
+    }
+
+    @include media('>768px') {
+        padding:0 30px;
+    }
+    @include media('>1024px') {
+        padding:0 50px;
+    }
 
     .nav_category {
         display: flex;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
         box-sizing: border-box;
-        flex-wrap: nowrap;
+        // flex-wrap: nowrap;
         list-style: none;
         width: 1130px;
         position: absolute;
+        margin: 0;
+
+
+        @include media('>375px') {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        @include media('>768px') {
+            flex-wrap: nowrap;
+            // margin: 30px 0 20px;
+        }
 
         li {
             margin: 0;
@@ -34,6 +62,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                font-size: 14px;
+                font-weight: 500;
 
                 img {
                     width: 90px;

@@ -2,6 +2,7 @@ import './homeMain.scss';
 import Navbar from './navbar.js';
 import HomeBanner from './homeBanner.js';
 import Story from './Story.js';
+import SearchCategory from './category';
 
 function HomeMain() {
     return(
@@ -33,6 +34,7 @@ function HomeMain() {
 
             <Navbar />
             <Story />
+            <SearchCategory />
             
         </>
     )

@@ -16,6 +16,27 @@ $main-color : #00bbff;
         align-items: center;
         justify-content: center;
 
+        //이거 안먹힘.. why?
+        // @include media('<375px') {
+        //     margin-left: -5px;
+        //     margin-right: -5px;
+        // }
+
+        .col-6 {
+            position:relative;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 50%;
+
+
+        //이거 안먹힘.. why?
+            // @include media('<375px') {
+            //     padding-left: 5px;
+            //     padding-right: 5px;
+            // }
+        }
+
+
         .col-md-3 {
             position: relative;
             width: 100%;
