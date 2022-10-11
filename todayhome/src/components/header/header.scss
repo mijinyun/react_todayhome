@@ -78,7 +78,19 @@ $main-color : #00bbff;
     }
 }
 
-
+.alert-warning {
+    background-color: $main-color;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    img {
+        height: 50px;
+    }
+    img:hover {
+        cursor: pointer;
+    }
+}
 
 .container {
 
@@ -151,6 +163,7 @@ $main-color : #00bbff;
     .MenuUser {
 
         margin: 0;
+        margin-left:5%;
         padding: 0;
 
         @include media ('<786px') {

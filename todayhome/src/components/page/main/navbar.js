@@ -2,7 +2,7 @@ import './navbar.scss';
 
 function NavMenu() {
     return(
-        <>
+        <div className='nav_container'>
             <ul className='nav_category'>
                 <li>
                     <div>
@@ -60,8 +60,7 @@ function NavMenu() {
                     </div>
                     <div>리모델링</div></li>
             </ul>
-
-        </>
+        </div>
     )
 }
 

@@ -1,15 +1,18 @@
 import './homeBanner.scss';
 import { Carousel } from 'react-bootstrap';
+import banner1 from '../../../banner1.png'
+import banner2 from '../../../banner2.png'
+import banner3 from '../../../banner3.png'
 
 function HomeBanner() {
     return (
         <>
-        <div className='main_banner'>
+        <div className='main_banner_img'>
                 <Carousel>
                     <Carousel.Item>
                         <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=First slide&bg=373940"
+                        className="banner_img d-block w-100"
+                        src={banner1}
                         alt="First slide"
                         />
                         <Carousel.Caption>
@@ -17,8 +20,8 @@ function HomeBanner() {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
+                        className="banner_img d-block w-100"
+                        src={banner2}
                         alt="Second slide"
                         />
 
@@ -28,8 +31,8 @@ function HomeBanner() {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        className="banner_img d-block w-100"
+                        src={banner3}
                         alt="Third slide"
                         />
 

@@ -1,4 +1,5 @@
 import Logo from './logo.png';
+import PopUp from './mainPopUp.png';
 import {Nav} from 'react-bootstrap'
 import './header.scss';
 import SubHeader from './subheader/subHeader.js';
@@ -21,6 +22,7 @@ function Header () {
 
     const [clickIdx, setClickIdx] = useState(0);
     const [subMenu, setSubMenu] = useState(data[0]);
+    const [alert, setAlert] = useState(true);
 
     useEffect(() => {
         switch (clickIdx) {
@@ -38,8 +40,21 @@ function Header () {
         }
     },[clickIdx]);
 
+    useEffect(() => {
+        setTimeout(() => {
+            setAlert(false);
+        },5000)
+    },[])
+
+
     return (
         <>
+        {
+            alert == true ? <div className='alert-warning'><img src={PopUp}/></div> : null
+
+        }
+
+
         <Nav>
             <div className='container'>
                 <img src={Logo} width="74px" height="40px" />
