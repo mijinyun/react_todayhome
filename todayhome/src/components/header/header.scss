@@ -3,6 +3,20 @@
 
 $main-color : #00bbff;
 
+// 이거 안먹힘 why~~~~
+@mixin keyframes ($blink-effect) {
+    @keyframes #{blink-effect} {
+        50% {
+            opacity: 0;
+        }
+    }
+    
+}
+
+@include keyframes(blink-effect);
+
+
+
 * {
     font-family: 'Noto Sans KR', sans-serif;
 
@@ -86,13 +100,26 @@ $main-color : #00bbff;
     height: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     img {
         height: 50px;
     }
     img:hover {
         cursor: pointer;
     }
+
+
+    .alert-warning-time {
+        font-size: 12px;
+        font-weight: 700;
+        color:white;
+        animation: blink-effect 1s infinit;
+
+    }
+
 }
+
+
 
 .container {
 

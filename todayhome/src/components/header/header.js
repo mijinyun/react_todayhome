@@ -51,7 +51,7 @@ function Header () {
     return (
         <header>
         {
-            alert == true ? <div className='alert-warning'><img src={PopUp}/></div> : null
+            alert == true ? <div className='alert-warning'><img src={PopUp} onClick={()=> { window.alert('쿠폰이 발급되었습니다.'); setAlert(false) }}/><span className = 'alert-warning-time'>👈5초 뒤 사라져요!</span></div> : null
 
         }
 

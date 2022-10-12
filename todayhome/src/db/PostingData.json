@@ -1,0 +1,32 @@
+{
+    "deal": [
+        {
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/1545117241_100615_1.jpg?gif=1&w=360&h=360&c=c&q=0.8&webp=1",
+        "company" :  "한빛카페트",
+        "title" : "에코퍼 양털러그 겸 소파패드",
+        "price" : "18,900",
+        "sale" : "73%"
+        },
+        {
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/163160584610799097.jpg?gif=1&w=360&h=360&c=c&q=0.8&webp=1",
+        "company" :  "아침향기",
+        "title" : "몬스테라 수경재배 실내공기정화식물 천연가습기",
+        "price" : "7,300",
+        "sale" : "43%"
+        },
+        {
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/165345845451800196.jpg?gif=1&w=360&h=360&c=c&q=0.8&webp=1",
+        "company" : "툴앤툴",
+        "title" : "누적판매 100만! 국민 전동드릴/광택기",
+        "price" : "14,500",
+        "sale" : "62%"
+        },
+        {
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/166202284058076952.jpg?gif=1&w=360&h=360&c=c&q=0.8&webp=1",
+        "company" :  "세타필",
+        "title" : "로션 473mlx2 + 수딩젤본품 1개 + 미니어처4종",
+        "price" : "25,800",
+        "sale" : "40%"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+$main-color : #00bbff;
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.deal_entire_section{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .deal_layout {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+
+        
+        .col-6 {
+            position:relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+
+        .col-md-3 {
+            position: relative;
+            width: 25%;
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+
+        }
+
+    }
+    .deal_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        // .deal_layout {
+        //     list-style: none;
+        //     display: flex;
+        //     align-items: stretch;
+        //     padding-left: 0;
+
+        //     li {
+        //         padding-left: 10px;
+        //         padding-right: 10px;
+        //     }
+        // }
+    }
+
+
+// .deal_entry_img_wrap {
+//     overflow: hidden;
+//     padding: 10px;
+
+//     img {
+//         border-radius: 6px;
+//         width: 100%;
+//     }
+// }
+
+// .deal_entry_content_wrap {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: stretch;
+// }
+
+// .deal_entry_content {
+// }

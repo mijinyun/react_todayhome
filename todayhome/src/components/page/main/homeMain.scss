@@ -21,33 +21,44 @@ $main-color : #00bbff;
         margin: 0;
 
     .img_wrap {
+        display: flex;
+        justify-content: center;
         width: 70%;
         position: relative;
-
-        img {
+        overflow: hidden;
+        
+        .img_wrap_img {
             position: absolute;
             margin-top:3rem;
-            width: 100%;
-            // max-height: 90%;
-            border-radius: 10px;
-            
+            width: 90%;
+            max-height: 90%;
+
+            .img_wrap_img_sample {
+
+                width: 100%;
+                border-radius: 10px;
+                transition: all 0.2s linear;
+            }
+            // 스케일 커지는거 추후에 수정해야할듯!!
+            .img_wrap_img_sample:hover {
+                transform: scale(1.5);
+            }
         }
+
     }
 
-    .img_content_wrap {
+    // 여기부터 임시로 해보기
+    .img_content_sample_wrap {
         position: absolute;
-        display: flex;
-        width: 70%;
-        bottom:10%;
-        margin-left:3rem;
-        
+        display:flex;
+        align-items: center;
+        bottom: 20%;
+        left:10%;
+        width: 90%;
+        justify-content: space-between;
+        padding-right: 10%;
 
-        .img_content {
-            padding-right: 350px;
-        }
-
-
-        .img_content_title {
+        .img_content_sample_title {
             h1 {
                 font-size: 24px;
                 max-height: 66px;
@@ -55,7 +66,7 @@ $main-color : #00bbff;
                 color:white;
             }
 
-            img {
+            .sample_img {
                 width: 18px;
                 height: 18px;
                 border-radius: 9px;
@@ -68,7 +79,9 @@ $main-color : #00bbff;
         }
     }
 
-    .img_more {
+
+    .img_more_sample {
+        
         button {
             background: transparent;
             border: 1px solid white;
@@ -84,7 +97,7 @@ $main-color : #00bbff;
             border-color: $main-color;
         }
     }
-
+    }
     .main_banner {
         width:30%;
         max-height: 90%;
@@ -92,6 +105,5 @@ $main-color : #00bbff;
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
-}
 }
 
