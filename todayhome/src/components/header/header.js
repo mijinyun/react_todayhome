@@ -70,7 +70,12 @@ function Header () {
         // 2. 만약에 링크를 버리고 button 온클릭을 사용하려면 링크를 버리고 navigator를 사용해서 이동해야할듯.으악 어려워!
         // setSearchName(input.current.value);
         console.log(searchName);
-        navigate('/search/index?name='+ searchName , {searchName: searchName} )
+        navigate('/search/?name='+ searchName , {state: {searchName: searchName}} )
+    }
+
+
+    const LoginBtn = () => {
+        navigate('/users/login')
     }
 
 
@@ -101,13 +106,10 @@ function Header () {
                 <ul className='MenuUser'>
                     <li>
                         <input className='Search' type='text' placeholder='통합검색' value={searchName} ref={input} onChange={onChangeInput}></input>
-                        {/* <Link to={'/search/index?name=' + searchName } element={<Search searchName={searchName}/>}> */}
                             <button type="button" onClick={onClickInput}>검색</button>
-                        {/* </Link> */}
-
                     </li>        
                     <li><span className='cartIcon'><FiShoppingCart /></span></li>
-                    <li>로그인</li>
+                    <li onClick={LoginBtn}>로그인</li>
                     <li className='signMenu'>회원가입</li>
                     <li>고객센터</li>
 

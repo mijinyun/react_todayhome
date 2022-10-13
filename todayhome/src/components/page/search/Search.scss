@@ -1,0 +1,21 @@
+.search_entire_section {
+    margin: 0;
+    padding: 0;
+
+    .search_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        max-width: 1256px;
+        margin: 0 auto;
+        padding: 0 60px;
+
+        .search_layout {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}
