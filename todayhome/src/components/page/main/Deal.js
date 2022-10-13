@@ -31,8 +31,8 @@ function Deal() {
                                                         <div className='deal_entry_content_title'>{deal.title}</div>
                                                         <div className='deal_entry_content_info'>
                                                             <div className='deal_entry_content_price'>
-                                                                <span>{deal.sale}</span>
-                                                                <span>{deal.price}</span>
+                                                                <span className='price_sale'>{deal.sale}</span>
+                                                                <span className='price'>{deal.price}</span>
                                                             </div>
                                                             <div>여기는 무료배송, 특가 등등 추가할 곳 (나중에 필터적용가능한지 확인도할것!</div>
                                                         </div>

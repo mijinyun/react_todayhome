@@ -10,7 +10,7 @@ $main-color : #00bbff;
 
 
 .nav_container {
-
+    
     overflow: auto;
     width: 100%;
     height: 165px;
@@ -19,16 +19,6 @@ $main-color : #00bbff;
     margin-top:3%;
     box-sizing: border-box;
 
-    @include media('>375px') {
-        padding:0 15px;
-    }
-
-    @include media('>768px') {
-        padding:0 30px;
-    }
-    @include media('>1024px') {
-        padding:0 50px;
-    }
 
     .nav_category {
         display: flex;
@@ -37,7 +27,8 @@ $main-color : #00bbff;
         box-sizing: border-box;
         // flex-wrap: nowrap;
         list-style: none;
-        width: 1130px;
+        // width: 1130px;
+        width:100%;
         position: absolute;
         margin: 0;
 
