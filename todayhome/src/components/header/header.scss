@@ -152,6 +152,7 @@ $main-color : #00bbff;
     img:hover {
         cursor: pointer;
     }
+
     ul {
     display: flex;
     justify-content: space-between;
@@ -190,7 +191,8 @@ $main-color : #00bbff;
     
 }
     .MenuUser {
-
+        display: flex;
+        align-items: center;
         margin: 0;
         margin-left:5%;
         padding: 0;
@@ -212,10 +214,13 @@ $main-color : #00bbff;
 
         .Search {
             // 이거 안먹힘 확인 필요
-            input {
-                width: 286px;
-                height: 40px;
-            }
+            width: 200px;
+            height: 40px;
+            border:0;
+            border-bottom: 1px solid;
+        }
+        .Search::placeholder {
+            text-align: center;
         }
 
         .cartIcon {
@@ -227,6 +232,11 @@ $main-color : #00bbff;
 
         .cartIcon:hover {
             color:$main-color;
+        }
+
+        .searchBtn {
+            background: transparent;
+            border:none;
         }
     }
 

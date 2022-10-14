@@ -14,8 +14,19 @@
 
         .search_layout {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+        }
+        
+        .search_contents {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            .search_content {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
         }
     }
-
 }

@@ -1,0 +1,33 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.dropdown-item:hover {
+  background-color:rgba(235, 235, 235, 0.5);
+}
+
+.item_list_container {
+  display: flex;
+  align-items: center;
+  margin:10px 5px;
+
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  } 
+
+  .item_entire_text{
+
+    .item_main_text{
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .item_sub_text{
+      font-size: 12px;
+      color:rgb(125, 125, 125);
+    }
+  }
+}
+

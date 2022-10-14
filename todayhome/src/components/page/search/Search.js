@@ -20,28 +20,21 @@ function Search(props) {
   const result = product.filter((value) => { // 배열 안 객체들 중 
     return (value.title.includes(searchName));  // 키 title의 값이 searchName을 포함하고 있는지! true면 return 헤서 result에 담긴다. -> 객체 형태로 ! 그래서 아래서 map을 사용해서 띄우면 된다뤼
   })
-  console.log(result);
   
-
-
-
-
   return(
     <>
       <Header />
       <div className='search_entire_section'>
-        {/* <h1>일단 테스트</h1>
-        <h2>{searchName}</h2> */}
         <div className = 'search_section'>
           <header>
             <h2 style={{fontSize:'20px', fontWeight:'700'}}>'{searchName}' 검색 결과입니다.</h2>
           </header>
           <div className='search_layout'>
-            <ul className='search_content'>
+            <ul className='search_contents'>
                 {
                   result.map(function(searchResult,i){
                     return(
-                      <li>
+                      <li className='search_content'>
                         <div>
                             <img src={searchResult.img}></img>
                         </div>
