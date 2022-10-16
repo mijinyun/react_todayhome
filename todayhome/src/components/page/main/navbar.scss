@@ -10,14 +10,19 @@ $main-color : #00bbff;
 
 
 .nav_container {
-    
+    display: block;
     overflow: auto;
     width: 100%;
     height: 165px;
     max-width: 1256px;
     margin: 0 auto;
-    margin-top:3%;
+    margin-top:5%;
     box-sizing: border-box;
+
+
+    @media(max-width:1156px) {
+        min-height: 350px;
+    }
 
 
     .nav_category {
@@ -33,14 +38,9 @@ $main-color : #00bbff;
         margin: 0;
 
 
-        @include media('>375px') {
+        @media(max-width:1156px) {
             width: 100%;
             flex-wrap: wrap;
-        }
-
-        @include media('>768px') {
-            flex-wrap: nowrap;
-            // margin: 30px 0 20px;
         }
 
         li {

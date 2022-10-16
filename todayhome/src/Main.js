@@ -7,6 +7,7 @@ function Main() {
     <div className="Main">
         <Header />
         <HomeMain />
+
     </div>
   );
 }

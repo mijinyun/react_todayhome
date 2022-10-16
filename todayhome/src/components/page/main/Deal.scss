@@ -9,53 +9,35 @@ $main-color : #00bbff;
 .deal_entire_section{
     display: flex;
     justify-content: center;
-    margin: 0 20%;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
-    .deal_layout {
-        display: flex;
-        align-items: stretch;
-        list-style: none;
-        flex-wrap: wrap;
-        padding:0;
-        margin: 0;
-
-        
-        .col-6 {
-            position:relative;
-            width: 50%;
-            box-sizing: border-box;
-        }
-
-
-        .col-md-3 {
-            position: relative;
-            width: 25%;
-            box-sizing: border-box;
-            margin:0;
-            padding: 0;
-        }
-
-        }
-
-    }
+    
     .deal_section {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
 
-        // .deal_layout {
-        //     list-style: none;
-        //     display: flex;
-        //     align-items: stretch;
-        //     padding-left: 0;
+        .deal_layout {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            list-style: none;
+            flex-wrap: wrap;
+            padding:0;
+            margin: 0;
 
-        //     li {
-        //         padding-left: 10px;
-        //         padding-right: 10px;
-        //     }
-        // }
+            
+                li {
+                    margin: 10px;
+                    padding: 20px;
+                }
+            }
+    
+        }
     }
 
 

@@ -108,7 +108,9 @@ function Header () {
                     <li onClick={()=> { setClickIdx(1)}}>스토어</li>
                 </Link>
                 
+                <Link to='/experts' style={{textDecoration:'none', color:'black'}}>
                     <li onClick={()=> { setClickIdx(2)}}>이상/시공/수리</li>
+                </Link>
                 </ul>
                 <ul className='MenuUser'>
                     <li>
@@ -119,8 +121,12 @@ function Header () {
                         <FiShoppingCart /></span>
                     </li>
                     <li onClick={LoginBtn}>로그인</li>
-                    <li className='signMenu'>회원가입</li>
-                    <li>고객센터</li>
+                    <Link to='/register' style={{textDecoration:'none', color:'black'}}>
+                        <li className='signMenu'>회원가입</li>
+                    </Link>
+                    <Link to='/FAQ' style={{textDecoration:'none', color:'black'}}>
+                        <li>고객센터</li>
+                    </Link>
 
                 </ul>    
                 <ul className='posting'>

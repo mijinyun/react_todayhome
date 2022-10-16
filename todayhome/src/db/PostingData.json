@@ -27,6 +27,35 @@
         "title" : "로션 473mlx2 + 수딩젤본품 1개 + 미니어처4종",
         "price" : "25,800",
         "sale" : "40%"
+        },
+        {
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/165784759849074393.jpg?gif=1&w=360&h=360&c=c&q=0.8&webp=1",
+        "company" :  "기본에",
+        "title" : "끼고 벗기 쉬운 고무장갑 3+3세트 외 수세미/행주티슈 모음",
+        "price" : "12,900",
+        "sale" : "35%"
+        },
+        {
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/166443627397314690.jpg?gif=1&w=360&h=360&c=c&q=0.8&webp=1",
+        "company" :  "네이쳐리빙",
+        "title" : "논슬리 코팅 니트 티셔츠 상의 옷걸이",
+        "price" : "9,900",
+        "sale" : "50%"
+        },
+        {
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/160507291166619353.jpg?gif=1&w=360&h=360&c=c&q=0.8&webp=1",
+        "company" :  "자일렉",
+        "title" : "에이블 핸디형/스틱스탠드 무선청소기",
+        "price" : "38,900",
+        "sale" : "44%"
+        },
+        {
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/166062151822962113.jpg?gif=1&w=360&h=360&c=c&q=0.8&webp=1",
+        "company" :  "비아케이스튜디오",
+        "title" : "튤립/카라 플라워 부케 LED",
+        "price" : "19,900",
+        "sale" : "62%"
         }
+
     ]
 }

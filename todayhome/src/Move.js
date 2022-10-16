@@ -1,12 +1,12 @@
 import Header from '../src/components/header/header.js';
-import StoreMain from './components/page/store/StoreMain.js';
+import MoveInner from './components/page/Move/move.js';
 
 
 function Store () {
     return(
         <>
             <Header />
-            <StoreMain />
+            <MoveInner />
         </>
     )
 }

@@ -6,42 +6,42 @@ import banner3 from '../../../banner3.png'
 
 function HomeBanner() {
     return (
-        <>
-        <div className='main_banner_img'>
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                        className="banner_img d-block w-100"
-                        src={banner1}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="banner_img d-block w-100"
-                        src={banner2}
-                        alt="Second slide"
-                        />
+        <div className='main_banner_img_section'>
+            <div className='main_banner_img'>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                            className="banner_img"
+                            src={banner1}
+                            alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="banner_img"
+                            src={banner2}
+                            alt="Second slide"
+                            />
 
-                        <Carousel.Caption>
+                            <Carousel.Caption>
 
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="banner_img d-block w-100"
-                        src={banner3}
-                        alt="Third slide"
-                        />
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="banner_img"
+                            src={banner3}
+                            alt="Third slide"
+                            />
 
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-            </Carousel>
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                </Carousel>
+            </div>  
         </div>
-        </>
     )
 }
 

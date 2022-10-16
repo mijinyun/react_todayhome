@@ -1,0 +1,29 @@
+{
+    "banner": [
+        {
+        "id" : "0",
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/166565059739761572.png?gif=1&w=2560&q=100",
+        "title" : "주말반짝특가"
+        },
+        {
+        "id" : "1",
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/166513540455959579.jpg?gif=1&w=2560&q=100",
+        "title" : "오덴세 빅세일"
+        },
+        {
+        "id" : "2",
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/166513185173981516.png?gif=1&w=2560&q=100",
+        "title" : "홈데코 특가"
+        },
+        {
+        "id" : "3",
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/166565163187674679.png?gif=1&w=2560&q=100",
+        "title" : "생필품 할인"
+        },
+        {
+        "id" : "4",
+        "img" : "https://image.ohou.se/i/bucketplace-v2-development/uploads/store/banners/store_home_banners/166547776523973034.png?gif=1&w=2560&q=100",
+        "title" : "LG베스트"
+        }
+    ]
+}

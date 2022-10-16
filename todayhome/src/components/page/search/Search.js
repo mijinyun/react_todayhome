@@ -40,12 +40,12 @@ function Search(props) {
                         </div>
                         <div>
                             <div>
-                              <div>{searchResult.company}</div>
-                                <div>{searchResult.title}</div>
-                                <div>
-                                  <div>
-                                    <span>{searchResult.sale}</span>
-                                    <span>{searchResult.price}</span>
+                              <div className='search_entry_content_company'>{searchResult.company}</div>
+                                <div className='search_entry_content_title'>{searchResult.title}</div>
+                                <div className='search_entry_content_info'>
+                                  <div className='search_entry_content_price'>
+                                    <span className='price_sale'>{searchResult.sale}</span>
+                                    <span className='price'>{searchResult.price}</span>
                                   </div>
                                   <div>여기는 무료배송, 특가 등등 추가할 곳 (나중에 필터적용가능한지 확인도할것!</div>
                                 </div>

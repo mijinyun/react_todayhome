@@ -4,10 +4,9 @@ import Main from './Main.js';
 import Store from './Store.js';
 import Search from './components/page/search/Search';
 import Login from './components/page/user/Login';
+import Move from './Move.js';
 
 function App() {
-
-  const location = useLocation();
 
   return (
     <div className='App'>
@@ -16,6 +15,9 @@ function App() {
           <Route path='/store' element={<Store />}></Route>
           <Route path='/search/' element={<Search />}></Route>
           <Route path='/users/login' element={<Login />}></Route>
+          <Route path='/register' element={<Move />}></Route>
+          <Route path='/experts' element={<Move />}></Route>
+          <Route path='/FAQ' element={<Move />}></Route>
         </Routes>    
     </div>
   );
