@@ -31,6 +31,7 @@ function Search(props) {
           </header>
           <div className='search_layout'>
             <ul className='search_contents'>
+                
                 {
                   result.map(function(searchResult,i){
                     return(
@@ -47,7 +48,7 @@ function Search(props) {
                                     <span className='price_sale'>{searchResult.sale}</span>
                                     <span className='price'>{searchResult.price}</span>
                                   </div>
-                                  <div>여기는 무료배송, 특가 등등 추가할 곳 (나중에 필터적용가능한지 확인도할것!</div>
+                                  
                                 </div>
                             </div>
                         </div>

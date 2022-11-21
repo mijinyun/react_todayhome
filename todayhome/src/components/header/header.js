@@ -101,15 +101,15 @@ function Header () {
                 <ul className='Menu'>
 
                 <Link to='/' style={{textDecoration:'none', color:'black'}}>
-                    <li onClick={()=> { setClickIdx(0)}}>커뮤니티</li>
+                    <li onMouseOver={()=> { setClickIdx(0)}}>커뮤니티</li>
                 </Link>
 
-                <Link to='/store' style={{textDecoration:'none', color:'black'}}>
-                    <li onClick={()=> { setClickIdx(1)}}>스토어</li>
+                <Link to='/store' style={{textDecoration:'none', color:'black'}} >
+                    <li onMouseOver={()=> { setClickIdx(1)}}>스토어</li>
                 </Link>
                 
                 <Link to='/experts' style={{textDecoration:'none', color:'black'}}>
-                    <li onClick={()=> { setClickIdx(2)}}>이상/시공/수리</li>
+                    <li onMouseOver={()=> { setClickIdx(2)}}>이상/시공/수리</li>
                 </Link>
                 </ul>
                 <ul className='MenuUser'>

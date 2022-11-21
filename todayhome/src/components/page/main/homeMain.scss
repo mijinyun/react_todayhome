@@ -8,8 +8,6 @@ $main-color : #00bbff;
 
 .homeMain-container {
     max-height: 70%;
-    // display: block;
-
 }
 .main-container {
     display: flex;
@@ -21,6 +19,11 @@ $main-color : #00bbff;
     max-width: 100%;
     height: 100%;
     box-sizing: border-box;
+
+    @media (max-width:990px) {
+        display: none;
+    }
+
     
     .row {
         display: flex;
@@ -43,11 +46,11 @@ $main-color : #00bbff;
             position: relative;
             display: block;
             width: 70%;
-            height: 50vh;
+            height: 60vh;
             left:15%;
             padding:0;
         }
-        
+
         .img_wrap_img {
             position: absolute;
             margin-top:3rem;
@@ -57,6 +60,7 @@ $main-color : #00bbff;
             .img_wrap_img_sample {
 
                 width: 100%;
+                height: 90%;
                 border-radius: 10px;
                 // transition: all 0.2s linear;
             }

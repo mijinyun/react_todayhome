@@ -4,7 +4,7 @@ import HomeMain from './components/page/main/homeMain.js';
 
 function Main() {
   return (
-    <div className="Main">
+    <div className="Main" style={{width:'100%', boxSizing:'border-box'}}>
         <Header />
         <HomeMain />
 

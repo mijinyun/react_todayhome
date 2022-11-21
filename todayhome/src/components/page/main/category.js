@@ -8,9 +8,9 @@ function SearchCategory() {
         
 
                 <div className='nav_container'>
-                    <header>
+                    {/* <header>
                         <h2 style={{fontSize:'20px', fontWeight:'700'}}>카테고리별 상품 찾기</h2>
-                    </header>
+                    </header> */}
                     <ul className='nav_category'>
 
                     {

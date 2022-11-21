@@ -20,7 +20,7 @@ function Login() {
         console.log( "result : ", result ); // 만약 입력값이 데이터에 없는 값이면 빈값이 들어오는 것이다. 
 
         if ( result == null || result == "" ) alert("로그인 실패");// 그렇기 때문에 result 가 null 이거 빈값이면 로그인 실패를 띄우는 것!!!!!!
-        else alert("로그인 성공");
+        else alert("로그인 성공"); navigate('/');
 
     }
 
