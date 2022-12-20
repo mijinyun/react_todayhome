@@ -24,7 +24,7 @@ npm start
 
 ## 📌시연 영상
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SaKmANeqgp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- 영상 링크 : https://youtu.be/SaKmANeqgp4
 
 ## 📌사용기술
 
