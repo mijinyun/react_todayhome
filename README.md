@@ -26,6 +26,15 @@ npm start
 
 - 영상 링크 : https://youtu.be/SaKmANeqgp4
 
+- 메인 탭 변화
+<img src="https://user-images.githubusercontent.com/107825260/208701090-67207cf2-8f28-4de3-9c83-fb730e05b56c.gif">
+
+- 로그인
+<img src="https://user-images.githubusercontent.com/107825260/208700258-e5e14424-061a-4f7e-9c3e-0cf6c1a5b453.gif">
+
+- 검색기능
+<img src="https://user-images.githubusercontent.com/107825260/208700196-ea91b6a5-d185-4de8-97ca-e61d053685c9.gif">
+
 ## 📌사용기술
 
 `HTML` `CSS` `JavaScript` `React` `SCSS`
